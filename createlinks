@@ -12,7 +12,7 @@ event_actions($event,
               'initialize-default-databases' => '00',
               'nethserver-rh-mariadb102-conf' => '10',
               'rh-mariadb102-mysqld_service' => '20',
-              'nethserver-phpmyadmin-mariadbsettings-conf' => '25',
+              'nethserver-phpmyadmin-mariadb102settings-conf' => '25',
               'nethserver-phpmyadmin-mariadb102-conf' => '30');
 
 templates2events("/etc/opt/rh/rh-mariadb102/my.cnf.d/mariadb-server.cnf",  $event);
@@ -67,7 +67,7 @@ templates2events("/root/.my.cnf",  $event);
 # event post-restore-config
 #
 event_actions('post-restore-config', qw(
-    nethserver-mariadb-restore-config 50
+    nethserver-mariadb102-restore-config 50
 ));
 
 exit;
