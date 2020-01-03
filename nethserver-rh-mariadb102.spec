@@ -61,6 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}-%{version}-filelist
 %defattr(-,root,root)
 %dir %{_nseventsdir}/%{name}-update
+
 %changelog
 * Sun Jul 8  2018 stephane de Labrusse <stephdl@de-labrusse.fr> 0.0.5
 - Release for rh-mariadb102
