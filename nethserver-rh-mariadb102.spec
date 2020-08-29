@@ -1,6 +1,6 @@
 Summary: NethServer mariadb102 configuration and templates.
 Name: nethserver-rh-mariadb102
-Version: 0.0.5
+Version: 0.0.6
 Release: 1%{?dist}
 License: GPL
 Group: Networking/Daemons
@@ -63,7 +63,10 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
-* Sun Jul 8  2018 stephane de Labrusse <stephdl@de-labrusse.fr> 0.0.5
+* Sat Aug 29 2020 stephane de labrusse <stephdl@de-labrusse.fr> 0.0.6
+- Expand phpmyadmin-save if installed
+
+* Sun Jul 8 2018 stephane de Labrusse <stephdl@de-labrusse.fr> 0.0.5
 - Release for rh-mariadb102
 - Avoid conflicting file between mariadb101 and mariadb102
 
@@ -79,4 +82,3 @@ rm -rf $RPM_BUILD_ROOT
 
 * Tue May 10 2016 stephane de Labrusse <stephdl@de-labrusse.fr> 0.0.1
 - First release
-
